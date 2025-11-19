@@ -18,6 +18,9 @@ $banner = @"
 
 Write-Host $banner -ForegroundColor Blue
 
+# Invisible pause
+Start-Sleep -Seconds 5
+
 
 # Set Windows OS variables
 $OSName       = 'Windows 11 24H2 x64'
