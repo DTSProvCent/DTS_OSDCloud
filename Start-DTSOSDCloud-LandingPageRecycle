@@ -1,4 +1,4 @@
-# --- Touch Telecom ASCII Banner ---
+# Touch Telecom ASCII Banner
 $banner = @"
  _____                _                                   
 |_   _|__  _   _  ___| |__                                
@@ -16,19 +16,8 @@ $banner = @"
                 |___/                                     
 "@
 
-# --- Centre the banner ---
-try {
-    $width = $Host.UI.RawUI.WindowSize.Width
-    if ($width -lt 10) { $width = 80 }   # WinPE fix
-} catch {
-    $width = 80
-}
+Write-Host $banner -ForegroundColor Blue
 
-$banner.Split("`n") | ForEach-Object {
-    $line = $_.TrimEnd()
-    $padding = [math]::Max(0, ($width - $line.Length) / 2)
-    Write-Host (" " * $padding + $line) -ForegroundColor Blue
-}
 
 # Set Windows OS variables
 $OSName       = 'Windows 11 24H2 x64'
