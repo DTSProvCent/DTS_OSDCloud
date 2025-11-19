@@ -19,7 +19,7 @@ $banner = @"
 Write-Host $banner -ForegroundColor Blue
 
 # Invisible pause
-ping -n 6 127.0.0.1 > $null
+ping -n 10 127.0.0.1 > $null
 
 
 
