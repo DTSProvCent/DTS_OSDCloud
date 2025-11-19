@@ -19,7 +19,8 @@ $banner = @"
 Write-Host $banner -ForegroundColor Blue
 
 # Invisible pause
-Start-Sleep -Seconds 10
+timeout /t 5 > $null
+
 
 
 # Set Windows OS variables
