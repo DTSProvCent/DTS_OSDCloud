@@ -1,5 +1,5 @@
 # Set Windows OS variables
-$OSName = 'Windows 11 24H2 x64'
+$OSName = 'Windows 11 25H2 x64'
 $OSEdition = 'Enterprise'
 $OSActivation = 'Retail'
 $OSLanguage = 'en-gb'
@@ -29,3 +29,4 @@ Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation
 
 # Reboot when complete
 wpeutil reboot
+
