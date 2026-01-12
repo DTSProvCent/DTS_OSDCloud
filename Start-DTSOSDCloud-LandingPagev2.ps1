@@ -3,7 +3,7 @@
 # =======================
 
 # --- OS Selection Variables ---
-$OSName       = 'Windows 11 24H2 x64'
+$OSName       = 'Windows 11 25H2 x64'
 $OSEdition    = 'Enterprise'
 $OSActivation = 'Retail'
 $OSLanguage   = 'en-gb'
@@ -76,3 +76,4 @@ if (Test-Path $exportScriptSource) {
 Write-Host "`nDeployment complete. Press any key to reboot into OOBE..." -ForegroundColor Green
 [void][System.Console]::ReadKey($true)
 wpeutil reboot
+
