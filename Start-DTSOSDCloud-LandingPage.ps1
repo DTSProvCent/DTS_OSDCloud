@@ -16,7 +16,7 @@ $Global:MyOSDCloud = [ordered]@{
     ClearDiskConfirm = $false
     ShutdownSetupComplete = $false
     SyncMSUpCatDriverUSB = $true
-    CheckSHA1 = $true
+    CheckSHA1 = $false
 }
 
 # Optional banner
@@ -29,5 +29,6 @@ Start-OSDCloud -OSName $OSName -OSEdition $OSEdition -OSActivation $OSActivation
 
 # Reboot when complete
 wpeutil reboot
+
 
 
