@@ -27,7 +27,7 @@ Write-Host "`nStarting OSDCloud for Windows 11 Professional - Resilience Build`n
 # =============================================================================
 # 0) Overwrite SetupComplete Scripts on X:\ boot.wim
 # =============================================================================
-$LocalScriptDir = 'X:\OSDCloud\Config\Scripts'
+$LocalScriptDir = 'X:\OSDCloud\Config\Scripts\SetupComplete'
 $ScriptsToDownload = @{
     'https://raw.githubusercontent.com/DTSProvCent/DTS_OSDCloud/refs/heads/main/Res_SetupComplete.ps1' = 'SetupComplete.ps1'
     'https://raw.githubusercontent.com/DTSProvCent/DTS_OSDCloud/refs/heads/main/Res_SetupComplete.cmd' = 'SetupComplete.cmd'
